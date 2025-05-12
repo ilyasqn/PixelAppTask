@@ -49,7 +49,5 @@ class A(Base):
 
     def func(self, val=None):
         if val is None:
-            if not isinstance(self._a, int):
-                raise AttributeError("Invalid type for _a")
             return self._a * 3 * 5
         return val * val * 3
